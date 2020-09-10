@@ -13,3 +13,47 @@
 
  ###### 使用jsdelivr访问的URL
  > https://cdn.jsdelivr.net/gh/wangsrGit119/wangsr-image-bucket/img-article/%E7%94%B5%E8%84%91%E5%9B%BE%E7%89%87%E7%B4%A0%E6%9D%902.jpg
+
+
+----
+
+#### L2Dwidget 使用
+
+##### node 项目
+**注意下面jsonPath的路径使用上面成都cdn加速**
+```javascript
+
+npm install -S live2d-widget
+
+------------------------------
+在需要引入的页面如下：
+import {L2Dwidget} from 'live2d-widget'
+
+.....
+
+  created() {
+        setTimeout(function () {
+            L2Dwidget.init({
+                model: {
+                    jsonPath: 'https://cdn.jsdelivr.net/gh/wangsrGit119/wangsr-image-bucket/L2Dwidget/live2d-widget-model-haruto/assets/haruto.model.json',
+                }
+            });
+        },2000);
+    }
+
+```
+#### 普通html
+**换不同的模型请根据仓库下不同名称替换即可**
+
+```javascript
+
+<script src="https://cdn.jsdelivr.net/gh/wangsrGit119/wangsr-image-bucket/L2Dwidget/js/L2Dwidget.min.js"></script>
+<script>
+L2Dwidget.init({
+  model: {
+    jsonPath: 'https://cdn.jsdelivr.net/gh/wangsrGit119/wangsr-image-bucket/L2Dwidget/live2d-widget-model-haruto/assets/haruto.model.json',
+  }
+});
+
+</script>
+```

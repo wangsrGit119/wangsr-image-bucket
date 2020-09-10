@@ -38,7 +38,7 @@ import {L2Dwidget} from 'live2d-widget'
                     jsonPath: 'https://cdn.jsdelivr.net/gh/wangsrGit119/wangsr-image-bucket/L2Dwidget/live2d-widget-model-haruto/assets/haruto.model.json',
                 }
             });
-        },2000);
+        },1000);
     }
 
 ```
